@@ -10,8 +10,8 @@ function App() {
     <>
       <h1>im jayakanth</h1>
       <h1>im alrafii</h1>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi beatae laudantium voluptatem sapiente. Et, odio voluptatibus! Neque quos numquam cumque eligendi qui expedita dolore, alias ut, ex dolorem reprehenderit quibusdam?ˀ</p>
     </>
   )
 }
-
 export default App
