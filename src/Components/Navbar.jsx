@@ -1,15 +1,21 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
+import {faBasketShopping} from '@fortawesome/free-solid-svg-icons'
+
 
 export default function Navbar() {
   return (
     <>
     <nav>
-      <Link to='/'>Home</Link>
+      <div className='nav'>
+      <Link to='/'>HOME</Link>
       <Link to='/Cricket'>CRICKET</Link>
       <Link to='/Football'>FOOTBALL</Link>
       <Link to='/Volleyball'>VOLLEYBALL</Link>
-      </nav>
+      </div>
+      <span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span>
+    </nav>
     </>
   )
 }
