@@ -5,7 +5,6 @@ import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
-
   return (
     <>
       <h1>im jayakanth</h1>
@@ -13,5 +12,4 @@ function App() {
     </>
   )
 }
-
 export default App
