@@ -2,11 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: mont;
+  font-family: sans-serif;
 }
 :root{
   --primary : #000;
   --secondary : grey;
+  --third : #fff;
 }
 nav{
   display: flex ;

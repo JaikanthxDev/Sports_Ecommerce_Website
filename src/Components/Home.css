@@ -1,0 +1,98 @@
+.heroimg{
+    position: relative;
+    width: 100%;
+    height: 750px;
+    overflow: hidden;
+}
+
+.heroimg img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.herotext{
+    position: absolute;
+    top: 30%;
+    right: 5%;
+    color: var(--third);
+    text-align: center;
+}
+.herotext button{
+    margin-left: 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--primary);
+    color: var(--third);
+    cursor: pointer;
+    border: none;
+}
+.herotext button:hover{
+    background-color: var(--third);
+    color: var(--primary);
+}
+.card1{
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.card img{
+    height: 300px;
+    width: 250px;
+}
+.card p{
+    font-weight: 600;
+}
+.offer{
+    height: 80px;
+    background-color: var(--primary);
+    color: var(--third);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+}
+.offer button{
+    margin-left: 20px;
+    height: 50px;
+    width: 150px;
+    font-size: 16px;
+    font-weight: 600;
+    background-color: var(--third);
+    color: var(--primary);
+    cursor: pointer;
+    border: none;
+}
+.offer button:hover{
+    background-color: var(--primary);
+    color: var(--third);
+    border: 1px solid #fff;
+}
+.offer p{
+    font-size: larger;
+    font-weight: bold;
+}
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    color: var(--primary);
+    padding: 20px 0px;
+}
+.footer ul{
+    list-style-type: none;
+}
+.f1{
+    width: 350px;
+}
+.footer a{
+    text-decoration: none;
+    color: var(--primary);
+}
+.f2{
+    height: 50px;
+    background-color: var(--secondary);
+    align-content: center;
+    color: var(--third);
+}
