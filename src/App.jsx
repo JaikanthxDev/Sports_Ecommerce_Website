@@ -8,6 +8,7 @@ import Volleyball from './Components/Volleyball'
 import Football from './Components/Football'
 import Cricket from './Components/Cricket'
 import Navbar from './Components/Navbar'
+import Cart from './Components/Cart'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -20,6 +21,7 @@ function App() {
       <Route path='/Cricket' element={<Cricket/>}/>
       <Route path='/Football'element={<Football/>}/>
       <Route path='/Volleyball' element={<Volleyball/>}/>
+      <Route path='/Cart' element={<Cart/>}/>
     </Routes>
     </BrowserRouter>
     </>

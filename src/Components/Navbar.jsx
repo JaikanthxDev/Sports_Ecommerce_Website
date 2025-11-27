@@ -13,8 +13,8 @@ export default function Navbar() {
       <Link to='/Cricket'>CRICKET</Link>
       <Link to='/Football'>FOOTBALL</Link>
       <Link to='/Volleyball'>VOLLEYBALL</Link>
+      <Link to='/Cart'><span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span></Link>
       </div>
-      <span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span>
     </nav>
     </>
   )

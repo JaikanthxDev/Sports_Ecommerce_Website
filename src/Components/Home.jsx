@@ -3,7 +3,9 @@ import React from 'react'
 export default function Home() {
   return (
   <>
-  <h1>Home</h1>
+  <div style={{backgroundColor : "#000"}}>
+    <marquee behavior="" direction="" style={{color:"#fff"}}>Enjoy Your Free Shipping</marquee>
+  </div>
   </>
   )
 }
