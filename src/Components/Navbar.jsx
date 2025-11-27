@@ -15,10 +15,6 @@ export default function Navbar() {
       <Link to='/Volleyball'>VOLLEYBALL</Link>
       <Link to='/Cart'><span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span></Link>
       </div>
-<<<<<<< HEAD
-=======
-      <div className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></div>
->>>>>>> b27eb16 (created)
     </nav>
     </>
   )
