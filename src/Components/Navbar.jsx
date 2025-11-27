@@ -15,11 +15,8 @@ export default function Navbar() {
       <Link to='/Volleyball'>VOLLEYBALL</Link>
       <Link to='/Cart'><span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span></Link>
       </div>
-<<<<<<< HEAD
-=======
       <hr />
       <h1>hi</h1>
->>>>>>> 209079d4637c8973f0fa702838290b68fc9b76b1
     </nav>
     </>
   )
