@@ -9,9 +9,9 @@ export default function Card(props) {
       <div className="description">
         <h2>{props.name}</h2>
          <p className="price">{props.price} <span>{props.dis_price}</span></p>
-        <button className="btn">Buy now</button>
+        <button className="btn1">Buy now</button>
       </div>
-       </div>
+     </div>
 
    </>
   )

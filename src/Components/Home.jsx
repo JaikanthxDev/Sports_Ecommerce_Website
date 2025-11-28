@@ -49,7 +49,7 @@ export default function Home() {
     <h1>New Collections</h1><br />
     <div className='card1'>
     <div className='card'>
-      <img src="https://ik.imagekit.io/vyka3olhl/common/home/desktop/gear-collection/mens_upVsII_oN.jpg" alt="" />
+      <img src="https://www.niviasports.com/cdn/shop/files/77A9028.jpg?v=1744201068&width=720" alt="" />
       <p>Outfit</p>
     </div>
     <div className='card'>
@@ -57,7 +57,7 @@ export default function Home() {
       <p>Cricket</p>
     </div>
     <div className='card'>
-      <img src="https://assets.adidas.com/images/w_766,h_766,f_auto,q_auto,fl_lossy,c_fill,g_auto/eec1eab224c04bfcb1157b722c93fc22_9366/womens-euro25-lge-ball.jpg" alt="" />
+      <img src="https://www.niviasports.com/cdn/shop/files/asd.jpg?v=1713348575&width=720" alt="" />
       <p>Football</p>
     </div>
     <div className='card'>

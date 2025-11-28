@@ -39,7 +39,7 @@ span{
     color: var(--five);
 }
 
-.description .btn{
+.description .btn1{
     margin-top: 10px;
     outline: none;
     border: 1px solid var(--four);
@@ -47,13 +47,17 @@ span{
     border-radius: 40px;
     background-color: none;
     color: var(--four);
+    background-color: transparent;
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: .3s linear;
 }
-
 .description .btn :hover{
+    background: var(--four) ;
+    color: var(--third);
+}
+.description .btn:hover{
     background: var(--four) ;
     color: var(--third);
 }
