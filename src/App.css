@@ -8,6 +8,8 @@
   --primary : #000;
   --secondary : grey;
   --third : #fff;
+  --four: rgb(123, 52, 52);
+  --five:#aa1c1c;
 }
 nav{
   display: flex ;

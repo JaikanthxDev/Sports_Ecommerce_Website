@@ -21,14 +21,14 @@
 .description h2{
     margin-top: 10px;
     font-size: 20px;
-    color: rgb(123, 52, 52);
+    color: var(--four);
     padding-left: 4px;
 }
 .price{
     margin: 15px 0px;
     padding-left: 4px;
     font-size: 18px;
-    color: #060805;
+    color: var(--primary);
     font-weight: bold;
 }
 
@@ -36,17 +36,17 @@ span{
     font-size: 13px;
     text-decoration: line-through;
     margin-left: 10px;
-    color: #aa1c1c;
+    color: var(--five);
 }
 
 .description .btn{
     margin-top: 10px;
     outline: none;
-    border: 1px solid rgb(123, 52, 52);
+    border: 1px solid var(--four);
     padding: 12px 32px;
     border-radius: 40px;
     background-color: none;
-    color: rgb(123, 52, 52);
+    color: var(--four);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
@@ -54,7 +54,6 @@ span{
 }
 
 .description .btn :hover{
-    background: rgb(123, 52, 52) ;
-    color: #fff;
-
+    background: var(--four) ;
+    color: var(--third);
 }
