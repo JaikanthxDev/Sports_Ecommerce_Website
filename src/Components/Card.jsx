@@ -11,7 +11,7 @@ export default function Card(props) {
          <p className="price">{props.price} <span>{props.dis_price}</span></p>
         <button className="btn">Buy now</button>
       </div>
-       </div>
+     </div>
 
    </>
   )
