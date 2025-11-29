@@ -61,3 +61,13 @@ span{
     background: var(--four) ;
     color: var(--third);
 }
+.hero2{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    font-size: 48px;
+    letter-spacing: 5px;
+}

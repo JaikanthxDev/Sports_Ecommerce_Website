@@ -5,10 +5,7 @@ import Card from './Card'
 export default function Cricket() {
   return (
     <>
-    <div style={{backgroundColor : "#000"}}>
-    <marquee behavior="" direction="" style={{color:"#fff"}}>Easy return within 4 days</marquee>
-    </div>
-
+    <div className="hero2">CRICKET PRODUCTS</div>
     <div className='product'>
       <Card 
       image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/Untitled_design_6_58fb72ed-e06e-44ef-b6f6-09d633d2f7e2.png?v=1751870889" 

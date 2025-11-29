@@ -1,4 +1,4 @@
-import {useState} from 'react'
+import { useEffect, useState, useRef } from 'react'
 import {Link} from 'react-router-dom'
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome'
 import {faBasketShopping} from '@fortawesome/free-solid-svg-icons'
@@ -6,6 +6,25 @@ import {faBasketShopping} from '@fortawesome/free-solid-svg-icons'
 
 export default function Navbar() {
   const[icon , setIcon] = useState(false);
+  const [run, setRun] = useState(true)     
+  const timerRef = useRef(null)              
+  const isUnmounted = useRef(false)      
+
+  useEffect(() => {                           
+    const tick = () => {
+      setRun(prev => !prev)
+      timerRef.current = setTimeout(tick, 5000)
+    };
+    timerRef.current = setTimeout(tick, 5000)
+
+    return () => {
+      //  cleanup 
+      isUnmounted.current = true             
+      if (timerRef.current) {
+        clearTimeout(timerRef.current)       
+      }
+    }
+  }, [])
   return (
     <>
     <nav>
@@ -30,6 +49,11 @@ export default function Navbar() {
           
       }
     </nav>
+    <div style={{ backgroundColor: "#000" }}>
+      <marquee style={{ color: "#fff" }}>
+        {run ? "Enjoy Your Free Shipping" : "Discount upto 50%" }
+      </marquee>
+    </div>
     </>
   )
 }

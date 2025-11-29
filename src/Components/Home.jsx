@@ -1,34 +1,11 @@
 import {Link} from 'react-router-dom'
 import './Home.css'
-import { useEffect, useState, useRef } from 'react'
 
 export default function Home() {
-  const [run, setRun] = useState(true)     
-  const timerRef = useRef(null)              
-  const isUnmounted = useRef(false)        
-
-  useEffect(() => {                           
-    const tick = () => {
-      setRun(prev => !prev)
-      timerRef.current = setTimeout(tick, 5000)
-    };
-    timerRef.current = setTimeout(tick, 5000)
-
-    return () => {
-      //  cleanup 
-      isUnmounted.current = true             
-      if (timerRef.current) {
-        clearTimeout(timerRef.current)       
-      }
-    }
-  }, [])
+  
   return (
   <>
-  <div style={{ backgroundColor: "#000" }}>
-      <marquee style={{ color: "#fff" }}>
-        {run ? "Enjoy Your Free Shipping" : "Discount upto 50%" }
-      </marquee>
-    </div>
+  
 
   {/* HERO */}
   <div>
