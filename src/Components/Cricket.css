@@ -36,7 +36,7 @@ span{
     font-size: 13px;
     text-decoration: line-through;
     margin-left: 10px;
-    color: var(--five);
+    color: var(--five);  
 }
 
 .description .btn{
@@ -60,14 +60,4 @@ span{
 .description .btn:hover{
     background: var(--four) ;
     color: var(--third);
-}
-.hero2{
-    height: 100px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: var(--secondary);
-    font-size: 48px;
-    letter-spacing: 5px;
 }
