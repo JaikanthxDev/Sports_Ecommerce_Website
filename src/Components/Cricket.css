@@ -39,7 +39,7 @@ span{
     color: var(--five);
 }
 
-.description .btn1{
+.description .btn{
     margin-top: 10px;
     outline: none;
     border: 1px solid var(--four);
@@ -51,7 +51,7 @@ span{
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
-    transition: .3s linear;
+    transition: 0.3s linear;
 }
 .description .btn :hover{
     background: var(--four) ;

@@ -46,6 +46,17 @@
 .card p{
     font-weight: 600;
 }
+.brand{
+    background-color: var(--primary);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.brand img{
+    width: 120px;
+    height: 80px;
+    margin: 10px 5px;
+}
 .offer{
     height: 80px;
     background-color: var(--primary);
@@ -75,36 +86,8 @@
     font-size: larger;
     font-weight: bold;
 }
-.footer{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin-top: 40px;
-    color: var(--primary);
-    padding: 20px 0px;
-}
-.footer ul{
-    list-style-type: none;
-}
-.f1{
-    width: 350px;
-}
-.footer a{
-    text-decoration: none;
-    color: var(--primary);
-}
-.f2{
-    height: 50px;
-    background-color: var(--primary);
-    align-content: center;
-    color: var(--third);
-}
 @media (max-width : 768px) {
     .card1{
         flex-direction: column;
-    }
-    .footer{
-        flex-direction: column;
-        align-items: center;
     }
 }

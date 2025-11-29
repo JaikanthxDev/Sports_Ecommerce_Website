@@ -1,6 +1,8 @@
 import React from 'react'
 import './Cricket.css'
 import Card from './Card'
+import Footer from './Footer'
+import './Footer.css'
 
 export default function Football() {
   return (
@@ -35,6 +37,7 @@ export default function Football() {
            />
     
         </div>
+        <Footer/>
     </>
   )
 }

@@ -1,12 +1,11 @@
-import {Link} from 'react-router-dom'
+import Footer from './Footer'
+import './Footer.css'
 import './Home.css'
 
 export default function Home() {
   
   return (
   <>
-  
-
   {/* HERO */}
   <div>
     <div className='heroimg'>
@@ -23,66 +22,63 @@ export default function Home() {
     </div>
     {/* collection */}
     <br />
-    <h1>New Collections</h1><br />
+    <h1 className='side-head'>NEW COLLECTIONS</h1><br />
     <div className='card1'>
     <div className='card'>
       <img src="https://www.niviasports.com/cdn/shop/files/77A9028.jpg?v=1744201068&width=720" alt="" />
-      <p>Outfit</p>
+      <h2>Outfit</h2>
     </div>
     <div className='card'>
       <img src="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/Untitled_design_6_86068171-afe6-410b-b155-43b37f7a93a5.png?v=1751882021" alt="" />
-      <p>Cricket</p>
+      <h2>Cricket</h2>
     </div>
     <div className='card'>
       <img src="https://www.niviasports.com/cdn/shop/files/asd.jpg?v=1713348575&width=720" alt="" />
-      <p>Football</p>
+      <h2>Football</h2>
     </div>
     <div className='card'>
       <img src="https://www.niviasports.com/cdn/shop/files/2B0A1845_1a12cfab-3504-462c-9c86-81d36564ce22.jpg?v=1728559966&width=720" alt="" />
-      <p>Volleyball</p>
+      <h2>Volleyball</h2>
     </div>
     </div>
     <br />
-
+    <h1 className='side-head'>BRANDS</h1>
+    <div>
+    <div className='brand'>
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c1.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c3.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c6.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c4.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c5.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c22.png" alt="" />
+    </div>
+    <hr />
+    <div className="brand">
+      <img src="https://i.ibb.co/PsrZ1dgD/ADIDAS-removebg-preview.png" alt="ADIDAS-removebg-preview"/>
+      <img src="https://i.postimg.cc/Gmvb3P1P/GM.png" alt="" />
+      <img src="https://i.ibb.co/7Jnyz591/PUMA-removebg-preview.png" alt="PUMA-removebg-preview"/>
+      <img src="https://i.postimg.cc/nctRbq0n/GM-(2).png" alt="" />
+      <img src="https://i.ibb.co/0jHvptfx/MRF-removebg-preview.png" alt="" />
+      <img src="https://i.ibb.co/fL5QLqh/SSTON-removebg-preview.png" alt="" />
+    </div>
+    <hr />
+    <div className="brand">
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c19.png" alt="ADIDAS-removebg-preview"/>
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c18.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c17.png" alt="PUMA-removebg-preview"/>
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c21.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c7.png" alt="" />
+      <img src="https://goalkick.qodeinteractive.com/wp-content/uploads/2024/05/footer-c20.png" alt="" />
+    </div>
+    </div>
+<br />
     <div className="offer">
       <p>BECOME A MEMBER AND GET 10% OFFER</p>
       <button>JOIN US</button>
     </div>
 
-    {/* footer */}
-    <div className="footer">
-        <div className="f1">
-        <h2>Logo</h2><br />
-        <p>Sports is about strength, be it physical or mental. Our mission is to design elegance with strength and to be the ultimate choice for your sport.</p>
-        <p><i class="fa-brands fa-facebook"></i> <i class="fa-brands fa-square-instagram"></i>  <i class="fa-brands fa-square-x-twitter"></i> <i class="fa-brands fa-youtube"></i></p>
-        </div>
-    <div>
-        <h3>Quick links</h3><br />
-        <ul>
-            <li> - Support</li><br/>
-            <li> - Helpline</li><br/>
-            <li> - Courses</li><br/>
-            <li> - Event</li>
-        </ul>
-    </div>
-    <div>
-        <h3>Other pages</h3><br />
-        <ul>
-            <Link to='/Cricket'><li> - Cricket</li></Link><br />
-            <Link to='/Football'><li> - Football</li></Link><br/>
-            <Link to='/Volleyball'><li> - Vollyball</li></Link>
-        </ul>
-    </div>
-    <div>
-        <h3>Shop Information</h3><br />
-        <p>Email : sportsa@gmail.com <br/><br/>
-        phone/Fax : 9047199321 <br/><br/>
-        address : 96,Peelamedu,Coimbatore 641-004</p>
-    </div>
-    </div>
-    <div className="f2">
-        <center><p>&copy; 2025 <span>Sports accessories</span> by Team </p></center>
-    </div>
-  </>
+    < Footer />
+    </>
+    
   )
 }

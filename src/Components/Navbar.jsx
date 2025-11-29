@@ -33,9 +33,9 @@ export default function Navbar() {
       <Link to='/Cricket'>CRICKET</Link>
       <Link to='/Football'>FOOTBALL</Link>
       <Link to='/Volleyball'>VOLLEYBALL</Link>
-      <Link to='/Cart'><span className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></span></Link>
+      <Link to='/Cart' className='nav-icon'><FontAwesomeIcon icon={faBasketShopping} /></Link>
       </div>
-      <button className='btn' onClick={()=>setIcon(!icon)}>☰</button>
+      <button className='btn1' onClick={()=>setIcon(!icon)}>☰</button>
       {
         icon && (
           <ul className='mobile-nav'>

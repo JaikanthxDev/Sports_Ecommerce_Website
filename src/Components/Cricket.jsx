@@ -1,6 +1,8 @@
 import React from 'react'
 import './Cricket.css'
 import Card from './Card'
+import Footer from './Footer'
+import './Footer.css'
 
 export default function Cricket() {
   return (
@@ -36,7 +38,7 @@ export default function Cricket() {
 
     </div>
     
-    
+    < Footer />
     </>
   )
 }
