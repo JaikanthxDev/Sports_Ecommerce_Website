@@ -1,6 +1,7 @@
 import React from 'react'
 import './Cricket.css'
 import Card from './Card'
+import { useState } from 'react';
 
 export default function Cricket() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -53,9 +54,6 @@ export default function Cricket() {
 
   return (
     <>
-    <div style={{backgroundColor : "#000"}}>
-    <marquee behavior="" direction="" style={{color:"#fff"}}>Easy return within 4 days</marquee>
-    </div>
 
     <div className='product'>
       <Card 
