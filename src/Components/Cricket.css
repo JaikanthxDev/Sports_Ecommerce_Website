@@ -1,3 +1,4 @@
+/* CARD STYLING */
 .container{
     margin-top: 50px;
     width: 320px;
@@ -11,19 +12,24 @@
 .container img {
     width: 100%;
     height: 235px;
-    object-fit:  cover;
-        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    object-fit: cover;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
 
+.description {
+    flex: 1;                 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.description{
-    margin-top: 10px;
-}
+
 .description h2{
     margin-top: 10px;
     font-size: 20px;
     color: var(--four);
     padding-left: 4px;
 }
+
 .price{
     margin: 15px 0px;
     padding-left: 4px;
@@ -36,7 +42,7 @@ span{
     font-size: 13px;
     text-decoration: line-through;
     margin-left: 10px;
-    color: var(--five);  
+    color: var(--five);
 }
 
 .description .btn{
@@ -45,19 +51,71 @@ span{
     border: 1px solid var(--four);
     padding: 12px 32px;
     border-radius: 40px;
-    background-color: none;
-    color: var(--four);
     background-color: transparent;
+    color: var(--four);
     font-weight: bold;
     text-transform: uppercase;
     cursor: pointer;
     transition: 0.3s linear;
 }
-.description .btn :hover{
-    background: var(--four) ;
-    color: var(--third);
-}
+
 .description .btn:hover{
-    background: var(--four) ;
+    background: var(--four);
     color: var(--third);
+    border: 1px solid white;
+}
+
+/* PRODUCT GRID */
+.product {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+/* DROPDOWN STYLING */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  margin: 20px;
+}
+
+.dropdown-btn {
+  padding: 10px 15px;
+  background: white;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 180px;
+  background: white;
+  border: 1px solid #ccc;
+  z-index: 9999;
+  max-height: 250px;
+  overflow-y: auto;
+  border-radius: 5px;
+}
+
+.dropdown-item {
+  padding: 10px;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background: #f1f1f1;
+}
+
+.selected-text {
+  margin-left: 20px;
+  font-size: 18px;
+  font-weight: bold;
+  color: var(--primary);
 }
