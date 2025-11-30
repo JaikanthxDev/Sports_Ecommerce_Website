@@ -1,3 +1,49 @@
+.hero2 {
+  height: 50vh; /* half screen */
+  background: url("https://images.pexels.com/photos/5836977/pexels-photo-5836977.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 80px; /* move text to left side */
+  color: var(--third);
+  position: relative;
+}
+.hero3{
+    height: 50vh; /* half screen */
+  background: url("https://images.pexels.com/photos/12704362/pexels-photo-12704362.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 80px; /* move text to left side */
+  color: var(--third);
+  position: relative;
+}
+.hero4 {
+  height: 50vh; /* half screen */
+  background: url("https://images.pexels.com/photos/32711306/pexels-photo-32711306.jpeg") center/cover no-repeat;
+  display: flex;
+  align-items: center;
+  padding-left: 80px; /* move text to left side */
+  color: var(--third);
+  position: relative;
+}
+
+/* Optional overlay */
+.hero2::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4); /* dark overlay */
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  font-size: 48px;
+  letter-spacing: 5px;
+  z-index: 2; /* keeps text above overlay */
+}
+
+
 .container{
     margin-top: 50px;
     width: 320px;
@@ -10,7 +56,7 @@
 
 .container img {
     width: 100%;
-    height: 235px;
+    height: 250px;
     object-fit:  cover;
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 

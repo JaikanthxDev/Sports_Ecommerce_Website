@@ -2,6 +2,8 @@ import React from 'react'
 import './Cricket.css'
 import Card from './Card'
 import { useState } from 'react';
+import Footer from './Footer'
+import './Footer.css'
 
 export default function Cricket() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -54,6 +56,11 @@ export default function Cricket() {
 
   return (
     <>
+    <div className="hero3">
+      <div className="hero-content">
+        CRICKET PRODUCTS
+      </div>
+      </div>
 
     <div className='product'>
       <Card 
@@ -85,7 +92,7 @@ export default function Cricket() {
 
     </div>
     
-    
+    <Footer/>
     </>
   );
 }
