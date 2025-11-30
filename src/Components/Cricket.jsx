@@ -2,20 +2,9 @@ import React from 'react'
 import './Cricket.css'
 import Card from './Card'
 import { useState } from 'react';
-import Footer from './Footer'
-import './Footer.css'
 
 export default function Cricket() {
   const [selectedCategory, setSelectedCategory] = useState("");
-
-  /** BRAND LIST */
-  const brands = [
-    "SS TON", "MRF", "GM GUNN & MOORE", "PUMA",
-    "GRAY-NICOLLS", "BREWFIT", "DSC", "REMFRY",
-    "SG", "ASICS", "KOOKABURRA", "DYNA TECH",
-    "MOONWALKR", "PHANTOM", "SF STANFORD", "SOMI",
-    "SHREY", "OAKLEY", "VERSANT", "RNS LARSONS"
-  ];
 
   /** CATEGORY LIST */
   const categories = [
@@ -34,7 +23,7 @@ export default function Cricket() {
     return (
       <div className="dropdown">
         <button className="dropdown-btn" onClick={() => setOpen(!open)}>
-          {title} ▼
+          {selectedCategory || title} ▼
         </button>
 
         {open && (
@@ -43,7 +32,10 @@ export default function Cricket() {
               <p
                 key={index}
                 className="dropdown-item"
-                onClick={() => setSelectedCategory(item)}
+                onClick={() => {
+                  setSelectedCategory(item);
+                  setOpen(false); // CLOSE MENU
+                }}
               >
                 {item}
               </p>
@@ -56,23 +48,18 @@ export default function Cricket() {
 
   return (
     <>
-    <div className="hero3">
-      <div className="hero-content">
-        CRICKET PRODUCTS
-      </div>
-      </div>
 
-    <div className='product'>
-      <Card 
-      image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/Untitled_design_6_58fb72ed-e06e-44ef-b6f6-09d633d2f7e2.png?v=1751870889" 
-      name="SG Triple Crown Original English Willow Cricket Bat"
-      dis_price="MRP:₹30,900.00"
-      price="MRP:₹35,000"
-      />
+      <div className='product'>
+        <Card 
+          image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/Untitled_design_6_58fb72ed-e06e-44ef-b6f6-09d633d2f7e2.png?v=1751870889" 
+          name="SG Triple Crown Original English Willow Cricket Bat"
+          dis_price="MRP:₹30,900.00"
+          price="MRP:₹35,000"
+        />
 
         <Card
-          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/1A1104/1A1104.jpg"
-          name="Kookaburra REGULATION CRICKET BALL"
+          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/ghostpro25/ghostpro25@13.jpg"
+          name="Kookaburra Ghost Pro EW Players Adult Cricket Bat"
           dis_price="MRP:₹6000.00"
           price="MRP:₹7,000"
         />
@@ -92,7 +79,7 @@ export default function Cricket() {
 
     </div>
     
-    <Footer/>
+    
     </>
   );
 }
