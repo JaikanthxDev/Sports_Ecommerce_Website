@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
-import './Cricket.css';
-import Card from './Card';
+import React from 'react'
+import './Cricket.css'
+import Card from './Card'
+import { useState } from 'react';
 
 export default function Cricket() {
   const [selectedCategory, setSelectedCategory] = useState("");
@@ -47,14 +48,6 @@ export default function Cricket() {
 
   return (
     <>
-      {/* Render Dropdown */}
-      <Dropdown title="Select Category" items={categories} />
-
-      {selectedCategory && (
-        <h3 className="selected-text">
-          Selected Category: {selectedCategory}
-        </h3>
-      )}
 
       <div className='product'>
         <Card 
@@ -111,8 +104,8 @@ export default function Cricket() {
         <Card 
           image="https://ik.imagekit.io/vyka3olhl/uk/product-3/navy-blue/SHREY_MASTER_CLASS_AIR_2.0_TITANIUM__H011_NAVY_2_HD_Gcao-1-qxD.webp?tr=w-700,h-933?tr=w-700,h-933"
           name="Shrey Master Class Cricket Helmet Air 2.0 Titanium"
-          dis_price="MRP:₹15,000.00"
-          price="MRP:₹13,500"
+          dis_price="MRP:₹95,900.00"
+          price="MRP:₹1,05,000"
         />
       </div>
 
@@ -148,88 +141,88 @@ export default function Cricket() {
 
        <div className='product'>
         <Card 
-          image="https://www.sstoncricket.com/wp-content/uploads/2023/04/56A1938-370x247.jpg" 
-          name="SS Bat wax 25 Grams"
-          dis_price="MRP:₹600.00"
-          price="MRP:₹500.00"
-        />
-
-        <Card
-          image="https://www.sstoncricket.com/wp-content/uploads/2024/10/DSC07935-2-1-370x555.jpg"
-          name="SS Pro fielding Gloves"
-          dis_price="MRP:₹700.00"
-          price="MRP:₹600.00"
-        />
-
-        <Card 
-          image="https://www.sstoncricket.com/wp-content/uploads/2023/04/SS-Fielding-Cone-38-cm-Pack-of-2-370x370.jpg"
-          name="Fielding Cone 45.72 cm (Pack of 2)"
-          dis_price="MRP:₹400.00"
-          price="MRP:₹250.00"
-        />
-
-        <Card 
-          image="https://www.sstoncricket.com/wp-content/uploads/2025/01/falcon-2000-370x370.jpg"
-          name="SS Falcon 2000 sports Sunglasses"
-          dis_price="MRP:₹1,800.00"
-          price="MRP:₹1,600.00"
-        />
-      </div>
-
-       <div className='product'>
-        <Card 
-          image="https://shopsportiff.com/wp-content/uploads/2024/11/BOUNCER-HALF-SLEEVES-05-1.webp" 
-          name="Sportiff Cricket Off White Half Sleeves"
-          dis_price="MRP:₹805.00"
-          price="MRP:₹900,00"
-        />
-
-        <Card
-          image="https://ik.imagekit.io/vyka3olhl/uk/ff6e475e-a1e7-459c-85f6-553aa332e794/off-white/SHREY_CRICKET_MATCH_2.0_SHIRT_SS_3189_OFF_WHITE_1_HD_1XRky-GIT.webp?tr=w-700,h-933"
-          name="Shrey Cricket Match 2.0 Shirt S/S"
-          dis_price="MRP:₹750.00"
-          price="MRP:₹660"
-        />
-
-        <Card 
-          image="https://shopsportiff.com/wp-content/uploads/2024/11/BOUNCER-FULL-SLEEVES-03-1.webp"
-          name="Sportiff Cricket Off White Full Sleeves"
-          dis_price="MRP:₹1000.00"
-          price="MRP:₹890"
-        />
-
-        <Card 
-          image="https://ik.imagekit.io/vyka3olhl/uk/3518eb6d-7246-4ca1-b1c9-6e8a4a15c902/off-white/SHREY_CRICKET_MATCH_2.0_SHIRT_LS_3190_OFF_WHITE_3_HD_AXQc2qQ7d.webp?tr=w-700,h-933?tr=w-700,h-933"
-          name="Shrey Cricket Match 2.0 Shirt L/S"
-          dis_price="MRP:₹800.00"
-          price="MRP:₹600"
-        />
-      </div>
-
-       <div className='product'>
-        <Card 
-          image="https://www.gray-nicolls.co.uk/cdn/shop/files/5316300BagPlayersAcademyWHL_DUFBLBlackFrontFlat.png?v=1734012247&width=1920" 
+          image="https://assets.2.commercebuild.com//b522fd52e101edc926c3308c230445d5/contents/variations/1a1104/thumbnail/big_1A1104@@White.jpg" 
           name="Kookaburra REGULATION CRICKET BALL(WHITE)"
           dis_price="MRP:₹7,500.00"
           price="MRP:₹6,000"
         />
 
         <Card
-          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/3S15101/3S15101.jpg"
-          name="Kookaburra Pro Players Custom Wheelie Bag"
+          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/1A1104/1A1104.jpg"
+          name="Kookaburra REGULATION CRICKET BALL(RED)"
           dis_price="MRP:₹7,000.00"
           price="MRP:₹6,000"
         />
 
         <Card 
-          image="https://www.sstoncricket.com/wp-content/uploads/2023/04/Pro-player-wheels-scaled.jpg"
+          image="https://webassets.cyranecloud.com/dukes-cricket/county_int_ball_web.jpg"
           name="Dukes County International A Cricket Ball 156g RED"
           dis_price="MRP:₹8,000.00"
           price="MRP:₹7,600"
         />
 
         <Card 
-          image="https://fcscricket.com/wp-content/uploads/2025/08/8-800x800.jpg"
+          image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/2_4f1ee1ae-142d-4981-a700-47f59073bda5.png?v=1720246355"
+          name="SG Test Limited Edition Red Cricket Leather Ball"
+          dis_price="MRP:₹95,900.00"
+          price="MRP:₹1,05,000"
+        />
+      </div>
+
+       <div className='product'>
+        <Card 
+          image="https://assets.2.commercebuild.com//b522fd52e101edc926c3308c230445d5/contents/variations/1a1104/thumbnail/big_1A1104@@White.jpg" 
+          name="Kookaburra REGULATION CRICKET BALL(WHITE)"
+          dis_price="MRP:₹7,500.00"
+          price="MRP:₹6,000"
+        />
+
+        <Card
+          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/1A1104/1A1104.jpg"
+          name="Kookaburra REGULATION CRICKET BALL(RED)"
+          dis_price="MRP:₹7,000.00"
+          price="MRP:₹6,000"
+        />
+
+        <Card 
+          image="https://webassets.cyranecloud.com/dukes-cricket/county_int_ball_web.jpg"
+          name="Dukes County International A Cricket Ball 156g RED"
+          dis_price="MRP:₹8,000.00"
+          price="MRP:₹7,600"
+        />
+
+        <Card 
+          image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/2_4f1ee1ae-142d-4981-a700-47f59073bda5.png?v=1720246355"
+          name="SG Test Limited Edition Red Cricket Leather Ball"
+          dis_price="MRP:₹95,900.00"
+          price="MRP:₹1,05,000"
+        />
+      </div>
+
+       <div className='product'>
+        <Card 
+          image="https://assets.2.commercebuild.com//b522fd52e101edc926c3308c230445d5/contents/variations/1a1104/thumbnail/big_1A1104@@White.jpg" 
+          name="Kookaburra REGULATION CRICKET BALL(WHITE)"
+          dis_price="MRP:₹7,500.00"
+          price="MRP:₹6,000"
+        />
+
+        <Card
+          image="https://assets.2.commercebuild.com/b522fd52e101edc926c3308c230445d5/contents/1A1104/1A1104.jpg"
+          name="Kookaburra REGULATION CRICKET BALL(RED)"
+          dis_price="MRP:₹7,000.00"
+          price="MRP:₹6,000"
+        />
+
+        <Card 
+          image="https://webassets.cyranecloud.com/dukes-cricket/county_int_ball_web.jpg"
+          name="Dukes County International A Cricket Ball 156g RED"
+          dis_price="MRP:₹8,000.00"
+          price="MRP:₹7,600"
+        />
+
+        <Card 
+          image="https://cdn.shopify.com/s/files/1/0827/6249/8336/files/2_4f1ee1ae-142d-4981-a700-47f59073bda5.png?v=1720246355"
           name="SG Test Limited Edition Red Cricket Leather Ball"
           dis_price="MRP:₹95,900.00"
           price="MRP:₹1,05,000"

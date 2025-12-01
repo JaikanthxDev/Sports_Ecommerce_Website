@@ -1,9 +1,14 @@
 import React from 'react'
+import './Cricket.css'
 
 export default function Volleyball() {
   return (
    <>
-   <p>Volleyball</p>
+   <div className="hero4">
+      <div className="hero-content">
+        VOLLEYBALL PRODUCTS
+      </div>
+      </div>
    </>
   )
 }
