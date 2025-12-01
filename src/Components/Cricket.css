@@ -16,6 +16,10 @@
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 }
 
+.container:hover{
+  border: solid var(--secondary );
+}
+
 .description {
     flex: 1;                 
     display: flex;

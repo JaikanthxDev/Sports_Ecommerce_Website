@@ -1,0 +1,26 @@
+.product1 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+.container{
+    margin-top: 50px;
+    width: 220px;
+    overflow: hidden;
+    max-height: 470px;
+    padding: 10px;
+    background-color:  #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn2{
+    background-color:var( --primary);
+    color: var(--third);
+    border: none;
+    margin-left: 10px;
+    padding: 5px;
+}
+.product1 image{
+    height: 500px;
+}

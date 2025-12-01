@@ -9,7 +9,7 @@ export default function Home() {
   {/* HERO */}
   <div>
     <div className='heroimg'>
-      <img src="https://media.istockphoto.com/id/1801193144/photo/cricket-sports.jpg?s=612x612&w=0&k=20&c=zISMV5taPi8bJWsIJFaDOboSTdIja7FB0Sphoja-e0o=" alt=""  />
+      <img src="https://img1.hscicdn.com/image/upload/f_auto,t_ds_w_1200,q_60/lsci/db/PICTURES/CMS/361200/361225.jpg" alt=""  />
       <div className='herotext'>
         <h1>LIGHT UP YOUR GAME</h1>
         <br />
