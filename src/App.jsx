@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import {Route,Routes,BrowserRouter} from 'react-router-dom'
 import Home from './Components/Home'
@@ -9,11 +7,12 @@ import Football from './Components/Football'
 import Cricket from './Components/Cricket'
 import Navbar from './Components/Navbar'
 import Cart from './Components/Cart'
+import CartProvider from './Context/CartContext'
 
 function App() {
-  const [count, setCount] = useState(0)
   return (
     <>
+    <CartProvider>
     <BrowserRouter>
     <Navbar/>
     <Routes>
@@ -24,6 +23,7 @@ function App() {
       <Route path='/Cart' element={<Cart/>}/>
     </Routes>
     </BrowserRouter>
+    </CartProvider>
     </>
   )
 }

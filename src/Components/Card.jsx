@@ -1,7 +1,9 @@
-import React from 'react'
+import { useContext } from 'react'
 import './Cricket.css'
+import { CartContext } from '../Context/CartContext'
 
 export default function Card(props) {
+  const { addToCart } = useContext(CartContext);
   return (
    <>
     <div className='container'>
@@ -9,7 +11,7 @@ export default function Card(props) {
       <div className="description">
         <h2>{props.name}</h2>
          <p className="price">{props.price} <span>{props.dis_price}</span></p>
-        <button className="btn">Buy now</button>
+        <button className="btn" onClick={() => addToCart(props)}>Buy now</button>
       </div>
      </div>
 

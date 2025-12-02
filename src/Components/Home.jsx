@@ -1,8 +1,18 @@
+import { useEffect, useState } from 'react'
 import Footer from './Footer'
 import './Footer.css'
 import './Home.css'
 
 export default function Home() {
+
+  const [data , SetData] = useState([]);
+  useEffect(()=>{
+    fetch("https://randomuser.me/api/?results=10")
+    .then(res => res.json())
+    .then(json =>{
+      SetData(json.results.slice(0,6))
+    }) 
+  },[])
   
   return (
   <>
@@ -72,6 +82,23 @@ export default function Home() {
     </div>
     </div>
 <br />
+    <h1 className='side-head'>OUR CUSTOMERS</h1>
+    <div className='users'>
+    {
+      data.length ===0 ? (
+        <p>Loading...</p>
+      ) : (
+      data.map((img , i) =>(
+        
+        <div key={i}>
+          <img src={img.picture.thumbnail} alt="" />
+          <p>{img.name.first}</p>
+        </div> 
+      ))
+    )
+    }
+    </div>
+    <br />
     <div className="offer">
       <p>BECOME A MEMBER AND GET 10% OFFER</p>
       <button>JOIN US</button>
